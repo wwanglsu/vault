@@ -1,5 +1,6 @@
 .navbar-brand .splash-page-logo {
   padding: $spacing-xs $spacing-s $spacing-xs $spacing-l;
+  display: none;
 
   @include from($mobile) {
     padding-left: $spacing-xs;

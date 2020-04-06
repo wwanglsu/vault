@@ -98,6 +98,9 @@
 .is-sideless.has-short-padding {
   padding: 0.25rem 1.25rem;
 }
+.navbar-brand span.has-current-color-fill {
+  display: none;
+}
 .has-current-color-fill {
   &,
   & svg {
