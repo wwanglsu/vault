@@ -1,0 +1,24 @@
+version: '3.1'
+services:
+  vault:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: eaas-vault:0.1
+    container_name: dev-vault
+    restart: always
+    ports:
+      - "8200:8200"
+    volumes:
+      #- ./config:/vault/config
+      - ./logs:/vault/logs
+      - ./file:/vault/file
+    environment:
+      - VAULT_DEV_ROOT_TOKEN_ID=myroot
+      - VAULT_ADDR=http://127.0.0.1:8200
+    #command: server -dev
+    cap_add:
+      - IPC_LOCK
+    #entrypoint: vault server -config=/vault/config/vault.json
+
+
