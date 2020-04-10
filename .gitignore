@@ -27,6 +27,8 @@ _testmain.go
 # Other dirs
 /bin/
 /pkg/
+/server/file/
+/server/logs/
 
 # Vault-specific
 example.hcl

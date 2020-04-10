@@ -44,7 +44,7 @@ if [ -n "$VAULT_LOCAL_CONFIG" ]; then
 fi
 
 # If the user is trying to run Vault directly with some arguments, then
-# pass them to Vault.
+# pass them to Vault. Or use: [ " -${1#?}" = " $1" ]
 if [ "${1:0:1}" = '-' ]; then
     set -- vault "$@"
 fi
