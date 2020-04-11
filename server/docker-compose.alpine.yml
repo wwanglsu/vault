@@ -1,0 +1,22 @@
+# Using: docker-compose -f docker-compose.alpine.yml up -d vault
+
+version: '3.1'
+services:
+  vault:
+    build:
+      context: .
+      dockerfile: Dockerfile.alpine
+    image: eaas-vault:0.1
+    container_name: dev-vault
+    restart: always
+    ports:
+      - "8200:8200"
+    volumes:
+      - ./config:/vault/config
+      - ./logs:/vault/logs
+      - ./file:/vault/file
+    environment:
+      - VAULT_ADDR=http://127.0.0.1:8200
+    cap_add:
+      - IPC_LOCK
+    entrypoint: vault server -config=/vault/config/vault-config.json
