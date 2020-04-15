@@ -37,7 +37,7 @@ import (
 	logicalAlicloud "github.com/hashicorp/vault-plugin-secrets-alicloud"
 	logicalAzure "github.com/hashicorp/vault-plugin-secrets-azure"
 	logicalGcp "github.com/hashicorp/vault-plugin-secrets-gcp/plugin"
-	logicalGcpKms "github.com/hashicorp/vault-plugin-secrets-gcpkms"
+	logicalGcpKms "github.com/wwanglsu/vault-plugin-secrets-gcpkms"
 	logicalKv "github.com/hashicorp/vault-plugin-secrets-kv"
 	logicalMongoAtlas "github.com/hashicorp/vault-plugin-secrets-mongodbatlas"
 	logicalAws "github.com/hashicorp/vault/builtin/logical/aws"

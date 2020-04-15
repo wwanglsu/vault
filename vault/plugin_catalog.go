@@ -245,7 +245,9 @@ func (c *PluginCatalog) Set(ctx context.Context, name string, pluginType consts.
 
 	c.lock.Lock()
 	defer c.lock.Unlock()
-
+	fmt.Println("This is test on 4/13/2020 Set()")
+	fmt.Println(pluginType)
+	fmt.Println(command)
 	return c.setInternal(ctx, name, pluginType, command, args, env, sha256)
 }
 

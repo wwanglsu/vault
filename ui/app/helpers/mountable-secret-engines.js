@@ -9,19 +9,13 @@ export const KMIP = {
 
 const MOUNTABLE_SECRET_ENGINES = [
   {
-    displayName: 'Active Directory',
-    value: 'ad',
-    type: 'ad',
-    category: 'cloud',
-  },
-  {
     displayName: 'AliCloud',
     value: 'alicloud',
     type: 'alicloud',
     category: 'cloud',
   },
   {
-    displayName: 'AWS',
+    displayName: 'AWS KMS',
     value: 'aws',
     type: 'aws',
     category: 'cloud',
@@ -33,69 +27,21 @@ const MOUNTABLE_SECRET_ENGINES = [
     category: 'cloud',
   },
   {
-    displayName: 'Consul',
-    value: 'consul',
-    type: 'consul',
-    category: 'infra',
-  },
-  {
-    displayName: 'Databases',
-    value: 'database',
-    type: 'database',
-    category: 'infra',
-  },
-  {
-    displayName: 'Google Cloud',
-    value: 'gcp',
-    type: 'gcp',
-    category: 'cloud',
-  },
-  {
     displayName: 'Google Cloud KMS',
     value: 'gcpkms',
     type: 'gcpkms',
     category: 'cloud',
   },
   {
-    displayName: 'KV',
+    displayName: 'KV/Vault',
     value: 'kv',
     type: 'kv',
     category: 'generic',
   },
   {
-    displayName: 'Nomad',
-    value: 'nomad',
-    type: 'nomad',
-    category: 'infra',
-  },
-  {
-    displayName: 'PKI Certificates',
-    value: 'pki',
-    type: 'pki',
-    category: 'generic',
-  },
-  {
-    displayName: 'RabbitMQ',
-    value: 'rabbitmq',
-    type: 'rabbitmq',
-    category: 'infra',
-  },
-  {
-    displayName: 'SSH',
-    value: 'ssh',
-    type: 'ssh',
-    category: 'generic',
-  },
-  {
-    displayName: 'Transit',
+    displayName: 'VMC KMS',
     value: 'transit',
     type: 'transit',
-    category: 'generic',
-  },
-  {
-    displayName: 'TOTP',
-    value: 'totp',
-    type: 'totp',
     category: 'generic',
   },
 ];

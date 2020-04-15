@@ -294,7 +294,16 @@ func (b *SystemBackend) handlePluginCatalogUntypedList(ctx context.Context, req 
 }
 
 func (b *SystemBackend) handlePluginCatalogUpdate(ctx context.Context, req *logical.Request, d *framework.FieldData) (*logical.Response, error) {
+	fmt.Println("call from handlePluginCatalogUpdate()")
+	fmt.Println(d)
+	datat, err := json.Marshal(d)
+	if err != nil {
+		fmt.Print(err)
+	}
+	fmt.Printf("%s\n", datat)
+
 	pluginName := d.Get("name").(string)
+	fmt.Println(pluginName)
 	if pluginName == "" {
 		return logical.ErrorResponse("missing plugin name"), nil
 	}

@@ -84,7 +84,7 @@ require (
 	github.com/hashicorp/vault-plugin-secrets-alicloud v0.5.4-beta1
 	github.com/hashicorp/vault-plugin-secrets-azure v0.5.5-beta1
 	github.com/hashicorp/vault-plugin-secrets-gcp v0.6.0-beta1
-	github.com/hashicorp/vault-plugin-secrets-gcpkms v0.5.4-beta1
+	github.com/wwanglsu/vault-plugin-secrets-gcpkms v0.5.6
 	github.com/hashicorp/vault-plugin-secrets-kv v0.5.4-beta1
 	github.com/hashicorp/vault-plugin-secrets-mongodbatlas v0.1.1
 	github.com/hashicorp/vault-plugin-secrets-openldap v0.1.0-beta1.0.20200306174116-e7553b03b931
