@@ -9,9 +9,9 @@ export const KMIP = {
 
 const MOUNTABLE_SECRET_ENGINES = [
   {
-    displayName: 'AliCloud KMS',
-    value: 'alicloud',
-    type: 'alicloud',
+    displayName: 'VMC KMS',
+    value: 'vmckms',
+    type: 'transit',
     category: 'cloud',
   },
   {
@@ -21,27 +21,27 @@ const MOUNTABLE_SECRET_ENGINES = [
     category: 'cloud',
   },
   {
-    displayName: 'Azure',
-    value: 'azure',
-    type: 'azure',
-    category: 'cloud',
-  },
-  {
     displayName: 'Google Cloud KMS',
     value: 'gcpkms',
     type: 'gcpkms',
     category: 'cloud',
   },
   {
+    displayName: 'AliCloud KMS',
+    value: 'alicloud',
+    type: 'alicloud',
+    category: 'cloud',
+  },
+  {
+    displayName: 'Azure',
+    value: 'azure',
+    type: 'azure',
+    category: 'cloud',
+  },
+  {
     displayName: 'Secrets Storage',
     value: 'kv',
     type: 'kv',
-    category: 'generic',
-  },
-  {
-    displayName: 'VMC KMS',
-    value: 'transit',
-    type: 'transit',
     category: 'generic',
   },
 ];
