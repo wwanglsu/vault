@@ -3,7 +3,9 @@ package transit
 import (
 	"context"
 	"encoding/base64"
+	"encoding/json"
 	"fmt"
+	"log"
 
 	"github.com/hashicorp/errwrap"
 	"github.com/hashicorp/vault/sdk/framework"
@@ -144,6 +146,12 @@ func (b *backend) pathEncryptWrite(ctx context.Context, req *logical.Request, d 
 	name := d.Get("name").(string)
 	var err error
 
+	datat, err := json.Marshal(req)
+	if err != nil {
+		log.Fatal(err)
+	}
+	fmt.Printf("vmckms decrypt req body:\n%s\n", datat)
+
 	batchInputRaw := d.Raw["batch_input"]
 	var batchInputItems []BatchRequestItem
 	if batchInputRaw != nil {
@@ -245,6 +253,7 @@ func (b *backend) pathEncryptWrite(ctx context.Context, req *logical.Request, d 
 		}
 	}
 	p, upserted, err = b.lm.GetPolicy(ctx, polReq, b.GetRandomReader())
+	p.VersionTemplate = "vmckms:v{{version}}:"
 	if err != nil {
 		return nil, err
 	}

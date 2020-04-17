@@ -2,8 +2,10 @@ package vault
 
 import (
 	"context"
+	"encoding/json"
 	"errors"
 	"fmt"
+	"log"
 	"strings"
 	"sync/atomic"
 	"time"
@@ -571,6 +573,28 @@ func (c *Core) handleRequest(ctx context.Context, req *logical.Request) (retResp
 	defer metrics.MeasureSince([]string{"core", "handle_request"}, time.Now())
 
 	var nonHMACReqDataKeys []string
+
+	fmt.Println("mock gcpkms request to vmckms:")
+	if strings.Contains(req.Path, "projects/hack-project/locations/") {
+		ss := strings.Split(req.Path, "/")
+		ss = strings.Split(ss[len(ss)-1], ":")
+		if ss[len(ss)-1] == "encrypt" {
+			req.Path = "vmckms/encrypt/" + ss[0]
+		}
+		if ss[len(ss)-1] == "decrypt" {
+			req.Path = "vmckms/decrypt/" + ss[0]
+		}
+		req.MountPoint = "vmckms/"
+		req.MountType = "transit"
+		// req.MountAccessor = "transit_6fda45cd"
+	}
+	fmt.Println("mock gcpkms request to vmckms req object:")
+	datat, err := json.Marshal(req)
+	if err != nil {
+		log.Fatal(err)
+	}
+	fmt.Printf("%s\n", datat)
+
 	entry := c.router.MatchingMountEntry(ctx, req.Path)
 	if entry != nil {
 		// Get and set ignored HMAC'd value.

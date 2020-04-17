@@ -37,9 +37,9 @@ import (
 	logicalAlicloud "github.com/hashicorp/vault-plugin-secrets-alicloud"
 	logicalAzure "github.com/hashicorp/vault-plugin-secrets-azure"
 	logicalGcp "github.com/hashicorp/vault-plugin-secrets-gcp/plugin"
-	logicalGcpKms "github.com/wwanglsu/vault-plugin-secrets-gcpkms"
 	logicalKv "github.com/hashicorp/vault-plugin-secrets-kv"
 	logicalMongoAtlas "github.com/hashicorp/vault-plugin-secrets-mongodbatlas"
+	logicalOpenLDAP "github.com/hashicorp/vault-plugin-secrets-openldap"
 	logicalAws "github.com/hashicorp/vault/builtin/logical/aws"
 	logicalCass "github.com/hashicorp/vault/builtin/logical/cassandra"
 	logicalConsul "github.com/hashicorp/vault/builtin/logical/consul"
@@ -47,13 +47,14 @@ import (
 	logicalMssql "github.com/hashicorp/vault/builtin/logical/mssql"
 	logicalMysql "github.com/hashicorp/vault/builtin/logical/mysql"
 	logicalNomad "github.com/hashicorp/vault/builtin/logical/nomad"
-	logicalOpenLDAP "github.com/hashicorp/vault-plugin-secrets-openldap"
 	logicalPki "github.com/hashicorp/vault/builtin/logical/pki"
 	logicalPostgres "github.com/hashicorp/vault/builtin/logical/postgresql"
 	logicalRabbit "github.com/hashicorp/vault/builtin/logical/rabbitmq"
 	logicalSsh "github.com/hashicorp/vault/builtin/logical/ssh"
 	logicalTotp "github.com/hashicorp/vault/builtin/logical/totp"
 	logicalTransit "github.com/hashicorp/vault/builtin/logical/transit"
+	logicalAwsKms "github.com/wwanglsu/vault-plugin-secrets-awskms"
+	logicalGcpKms "github.com/wwanglsu/vault-plugin-secrets-gcpkms"
 )
 
 // Registry is inherently thread-safe because it's immutable.
@@ -117,6 +118,7 @@ func newRegistry() *registry {
 			"consul":       logicalConsul.Factory,
 			"gcp":          logicalGcp.Factory,
 			"gcpkms":       logicalGcpKms.Factory,
+			"awskms":       logicalAwsKms.Factory,
 			"kv":           logicalKv.Factory,
 			"mongodb":      logicalMongo.Factory, // Deprecated
 			"mongodbatlas": logicalMongoAtlas.Factory,

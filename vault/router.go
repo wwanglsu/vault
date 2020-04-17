@@ -2,7 +2,9 @@ package vault
 
 import (
 	"context"
+	"encoding/json"
 	"fmt"
+	"log"
 	"strings"
 	"sync"
 	"sync/atomic"
@@ -488,6 +490,12 @@ func (r *Router) routeCommon(ctx context.Context, req *logical.Request, existenc
 	if err != nil {
 		return nil, false, false, err
 	}
+
+	datat, err := json.Marshal(req)
+	if err != nil {
+		log.Fatal(err)
+	}
+	fmt.Printf("vmckms routerCommon req body:\n%s\n", datat)
 
 	// Find the mount point
 	r.l.RLock()

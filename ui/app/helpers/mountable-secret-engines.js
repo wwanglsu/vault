@@ -9,7 +9,7 @@ export const KMIP = {
 
 const MOUNTABLE_SECRET_ENGINES = [
   {
-    displayName: 'AliCloud',
+    displayName: 'AliCloud KMS',
     value: 'alicloud',
     type: 'alicloud',
     category: 'cloud',
@@ -33,14 +33,14 @@ const MOUNTABLE_SECRET_ENGINES = [
     category: 'cloud',
   },
   {
-    displayName: 'KV/Vault',
+    displayName: 'Secrets Storage',
     value: 'kv',
     type: 'kv',
     category: 'generic',
   },
   {
     displayName: 'VMC KMS',
-    value: 'transit',
+    value: 'vmckms',
     type: 'transit',
     category: 'generic',
   },
