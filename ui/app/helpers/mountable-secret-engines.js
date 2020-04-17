@@ -10,7 +10,7 @@ export const KMIP = {
 const MOUNTABLE_SECRET_ENGINES = [
   {
     displayName: 'VMC KMS',
-    value: 'vmckms',
+    value: 'transit',
     type: 'transit',
     category: 'cloud',
   },

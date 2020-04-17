@@ -724,6 +724,8 @@ github.com/tv42/httpunix v0.0.0-20150427012821-b75d8614f926/go.mod h1:9ESjWnEqri
 github.com/ulikunitz/xz v0.5.6 h1:jGHAfXawEGZQ3blwU5wnWKQJvAraT7Ftq9EXjnXYgt8=
 github.com/ulikunitz/xz v0.5.6/go.mod h1:2bypXElzHzzJZwzH67Y6wb67pO62Rzfn7BSiF4ABRW8=
 github.com/urfave/cli v1.20.0/go.mod h1:70zkFmudgCuE/ngEzBv17Jvp/497gISqfk5gWijbERA=
+github.com/wwanglsu/vault-plugin-secrets-awskms v0.0.3 h1:jBv5bxMDiOBzMz46HOygNwRawt1MzfLE5XsGBseaGiA=
+github.com/wwanglsu/vault-plugin-secrets-awskms v0.0.3/go.mod h1:u4vXOb5e6qn+XJPgCu+LR9p34SZ3OOlPxfFjn4AcxCI=
 github.com/wwanglsu/vault-plugin-secrets-gcpkms v0.5.6 h1:nt6UK+9qslafM6jnGznsDKrrULQlAxK1BeCeqwfuW8M=
 github.com/wwanglsu/vault-plugin-secrets-gcpkms v0.5.6/go.mod h1:raYy5l9aGCmtGU6pqF3Ubf7RLqWebTAJ8kn8JJ9nHOE=
 github.com/xdg/scram v0.0.0-20180814205039-7eeb5667e42c h1:u40Z8hqBAAQyv+vATcGgV0YCnDjqSL7/q/JyPhhJSPk=
