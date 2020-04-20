@@ -53,6 +53,7 @@ import (
 	logicalSsh "github.com/hashicorp/vault/builtin/logical/ssh"
 	logicalTotp "github.com/hashicorp/vault/builtin/logical/totp"
 	logicalTransit "github.com/hashicorp/vault/builtin/logical/transit"
+	logicalAlicloudKms "github.com/wwanglsu/vault-plugin-secrets-alicloudkms"
 	logicalAwsKms "github.com/wwanglsu/vault-plugin-secrets-awskms"
 	logicalGcpKms "github.com/wwanglsu/vault-plugin-secrets-gcpkms"
 )
@@ -118,6 +119,7 @@ func newRegistry() *registry {
 			"consul":       logicalConsul.Factory,
 			"gcp":          logicalGcp.Factory,
 			"gcpkms":       logicalGcpKms.Factory,
+			"alicloudkms":  logicalAlicloudKms.Factory,
 			"awskms":       logicalAwsKms.Factory,
 			"kv":           logicalKv.Factory,
 			"mongodb":      logicalMongo.Factory, // Deprecated

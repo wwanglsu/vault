@@ -15,7 +15,7 @@ require (
 	github.com/SAP/go-hdb v0.14.1
 	github.com/StackExchange/wmi v0.0.0-20180116203802-5d049714c4a6 // indirect
 	github.com/abdullin/seq v0.0.0-20160510034733-d5467c17e7af // indirect
-	github.com/aliyun/alibaba-cloud-sdk-go v0.0.0-20190620160927-9418d7b0cd0f
+	github.com/aliyun/alibaba-cloud-sdk-go v1.61.126
 	github.com/aliyun/aliyun-oss-go-sdk v0.0.0-20190307165228-86c17b95fcd5
 	github.com/apple/foundationdb/bindings/go v0.0.0-20190411004307-cd5c9d91fad2
 	github.com/armon/go-metrics v0.3.3
@@ -84,8 +84,6 @@ require (
 	github.com/hashicorp/vault-plugin-secrets-alicloud v0.5.4-beta1
 	github.com/hashicorp/vault-plugin-secrets-azure v0.5.5-beta1
 	github.com/hashicorp/vault-plugin-secrets-gcp v0.6.0-beta1
-	github.com/wwanglsu/vault-plugin-secrets-gcpkms v0.5.6
-	github.com/wwanglsu/vault-plugin-secrets-awskms v0.0.5
 	github.com/hashicorp/vault-plugin-secrets-kv v0.5.4-beta1
 	github.com/hashicorp/vault-plugin-secrets-mongodbatlas v0.1.1
 	github.com/hashicorp/vault-plugin-secrets-openldap v0.1.0-beta1.0.20200306174116-e7553b03b931
@@ -133,6 +131,9 @@ require (
 	github.com/shopspring/decimal v0.0.0-20180709203117-cd690d0c9e24 // indirect
 	github.com/stretchr/testify v1.4.0
 	github.com/tidwall/pretty v1.0.0 // indirect
+	github.com/wwanglsu/vault-plugin-secrets-alicloudkms v0.0.1
+	github.com/wwanglsu/vault-plugin-secrets-awskms v0.0.5
+	github.com/wwanglsu/vault-plugin-secrets-gcpkms v0.5.6
 	github.com/xdg/scram v0.0.0-20180814205039-7eeb5667e42c // indirect
 	github.com/xdg/stringprep v1.0.0 // indirect
 	github.com/xi2/xz v0.0.0-20171230120015-48954b6210f8 // indirect
