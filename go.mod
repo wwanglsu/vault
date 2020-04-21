@@ -131,8 +131,8 @@ require (
 	github.com/shopspring/decimal v0.0.0-20180709203117-cd690d0c9e24 // indirect
 	github.com/stretchr/testify v1.4.0
 	github.com/tidwall/pretty v1.0.0 // indirect
-	github.com/wwanglsu/vault-plugin-secrets-alicloudkms v0.0.2
-	github.com/wwanglsu/vault-plugin-secrets-awskms v0.0.5
+	github.com/wwanglsu/vault-plugin-secrets-alicloudkms v0.0.3
+	github.com/wwanglsu/vault-plugin-secrets-awskms v0.0.6
 	github.com/wwanglsu/vault-plugin-secrets-gcpkms v0.5.6
 	github.com/xdg/scram v0.0.0-20180814205039-7eeb5667e42c // indirect
 	github.com/xdg/stringprep v1.0.0 // indirect
