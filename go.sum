@@ -74,6 +74,8 @@ github.com/alecthomas/units v0.0.0-20190717042225-c3de453c63f4/go.mod h1:ybxpYRF
 github.com/aliyun/alibaba-cloud-sdk-go v0.0.0-20190412020505-60e2075261b6/go.mod h1:T9M45xf79ahXVelWoOBmH0y4aC1t5kXO5BxwyakgIGA=
 github.com/aliyun/alibaba-cloud-sdk-go v0.0.0-20190620160927-9418d7b0cd0f h1:oRD16bhpKNAanfcDDVU+J0NXqsgHIvGbbe/sy+r6Rs0=
 github.com/aliyun/alibaba-cloud-sdk-go v0.0.0-20190620160927-9418d7b0cd0f/go.mod h1:myCDvQSzCW+wB1WAlocEru4wMGJxy+vlxHdhegi1CDQ=
+github.com/aliyun/alibaba-cloud-sdk-go v1.61.126 h1:KdUAb+Nwkuor6MUd+5iUW3EFp7OF1kiorVVND6W/M2M=
+github.com/aliyun/alibaba-cloud-sdk-go v1.61.126/go.mod h1:pUKYbK5JQ+1Dfxk80P0qxGqe5dkxDoabbZS7zOcouyA=
 github.com/aliyun/aliyun-oss-go-sdk v0.0.0-20190307165228-86c17b95fcd5 h1:nWDRPCyCltiTsANwC/n3QZH7Vww33Npq9MKqlwRzI/c=
 github.com/aliyun/aliyun-oss-go-sdk v0.0.0-20190307165228-86c17b95fcd5/go.mod h1:T/Aws4fEfogEE9v+HPhhw+CntffsBHJ8nXQCwKr0/g8=
 github.com/anmitsu/go-shlex v0.0.0-20161002113705-648efa622239/go.mod h1:2FmKhYUyUczH0OGQWaF5ceTx0UBShxjsH6f8oGKYe2c=
@@ -724,8 +726,12 @@ github.com/tv42/httpunix v0.0.0-20150427012821-b75d8614f926/go.mod h1:9ESjWnEqri
 github.com/ulikunitz/xz v0.5.6 h1:jGHAfXawEGZQ3blwU5wnWKQJvAraT7Ftq9EXjnXYgt8=
 github.com/ulikunitz/xz v0.5.6/go.mod h1:2bypXElzHzzJZwzH67Y6wb67pO62Rzfn7BSiF4ABRW8=
 github.com/urfave/cli v1.20.0/go.mod h1:70zkFmudgCuE/ngEzBv17Jvp/497gISqfk5gWijbERA=
+github.com/wwanglsu/vault-plugin-secrets-alicloudkms v0.0.2 h1:FXSs8Jr9BmRkcl0AhFJpRaaqk32wVtLqRV0fpXpGT9A=
+github.com/wwanglsu/vault-plugin-secrets-alicloudkms v0.0.2/go.mod h1:ci3gKsanNSMRQmIL7qRU3L1h/BS7EMqlmmmKSYQwgw8=
 github.com/wwanglsu/vault-plugin-secrets-awskms v0.0.3 h1:jBv5bxMDiOBzMz46HOygNwRawt1MzfLE5XsGBseaGiA=
 github.com/wwanglsu/vault-plugin-secrets-awskms v0.0.3/go.mod h1:u4vXOb5e6qn+XJPgCu+LR9p34SZ3OOlPxfFjn4AcxCI=
+github.com/wwanglsu/vault-plugin-secrets-awskms v0.0.5 h1:gGyaC7LarOwm34qNdlw43YGia5QHBZr8QU+mgwtKnls=
+github.com/wwanglsu/vault-plugin-secrets-awskms v0.0.5/go.mod h1:u4vXOb5e6qn+XJPgCu+LR9p34SZ3OOlPxfFjn4AcxCI=
 github.com/wwanglsu/vault-plugin-secrets-gcpkms v0.5.6 h1:nt6UK+9qslafM6jnGznsDKrrULQlAxK1BeCeqwfuW8M=
 github.com/wwanglsu/vault-plugin-secrets-gcpkms v0.5.6/go.mod h1:raYy5l9aGCmtGU6pqF3Ubf7RLqWebTAJ8kn8JJ9nHOE=
 github.com/xdg/scram v0.0.0-20180814205039-7eeb5667e42c h1:u40Z8hqBAAQyv+vATcGgV0YCnDjqSL7/q/JyPhhJSPk=
