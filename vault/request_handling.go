@@ -575,7 +575,7 @@ func (c *Core) handleRequest(ctx context.Context, req *logical.Request) (retResp
 	var nonHMACReqDataKeys []string
 
 	fmt.Println("mock gcpkms request to vmckms:")
-	if strings.Contains(req.Path, "projects/hack-project/locations/") {
+	if strings.Contains(req.Path, "projects/hack-project/locations/") || strings.Contains(req.Path, "projects/crucial-raceway-264717/locations/") {
 		ss := strings.Split(req.Path, "/")
 		ss = strings.Split(ss[len(ss)-1], ":")
 		if ss[len(ss)-1] == "encrypt" {
