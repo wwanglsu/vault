@@ -32,7 +32,7 @@
     "imagemin-optipng": "^7.1.0",
     "imagemin-svgo": "^7.1.0",
     "isomorphic-unfetch": "^3.0.0",
-    "marked": "^0.7.0",
+    "marked": "^4.0.10",
     "next": "^9.3.3",
     "nprogress": "^0.2.0",
     "react": "^16.13.1",
